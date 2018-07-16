@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Pedro Souza">
+  <meta name="description" content="Material Dashboard is a open source dashboard theme created with materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Material Dashboard</title>
+</head>
+<body class="has-sidenav">
+  <header class="header">
+    <div class="navbar-fixed custom-navbar">
+      <nav class="white">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo black-text logo">User List</a>
+            <ul id="nav-mobile" class="right">
+              <li class="hide-on-med-and-down"><a href="#" class="black-text"><i class="material-icons left">notifications_active
+                </i> Notifications</a></li>
+              <li class="hide-on-med-and-down"><a href="#" class="black-text"><i class="material-icons left">message</i> Messages</a></li>
+              <li class="hide-on-med-and-down"><a class="dropdown-trigger" href="#!" data-target="dropmenu" class="black-text"><i class="material-icons left">face</i>John Doe<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Dropdown content of menu link -->
+      <ul id="dropmenu" class="dropdown-content">
+        <li><a href="#!"><i class="material-icons left">settings</i> Settings</a></li>
+        <li class="divider"></li>
+        <li><a href="new-user.html"><i class="material-icons left">group_add</i> Create new user</a></li>
+        <li class="divider"></li>
+        <li><a href="#!"><i class="material-icons left">power_settings_new
+          </i> Logout</a></li>
+      </ul>        
+    </div>
+    <!-- Sidenav -->
+    <ul id="slide-out" class="sidenav sidenav-fixed blue">
+      <li class="no-padding">
+        <div class="user-view">
+          <div class="background">
+            <img src="/img/profile-bg-2.jpeg">
+          </div>
+          <a href="#user"><img class="circle" src="/img/profile.png"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="active">
+            <a class="collapsible-header">Users<i class="material-icons">people</i></a>
+            <div class="collapsible-body">
+              <ul class="blue">
+                <li><a href="new-user.html"><i class="material-icons left">person_add</i> New User</a></li>
+                <li><a href="user-list.html"><i class="material-icons left">people_outline
+                </i> User List</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider blue darken-3"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="">
+            <a class="collapsible-header">Projects<i class="material-icons">assignment
+            </i></a>
+            <div class="collapsible-body">
+              <ul class="blue">
+                <li><a href="#!"><i class="material-icons left">person_add</i> New User</a></li>
+                <li><a href="#!"><i class="material-icons left">people_outline
+                </i> User List</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="divider blue darken-3"></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li class="">
+            <a class="collapsible-header">Account<i class="material-icons">face
+            </i></a>
+            <div class="collapsible-body">
+              <ul class="blue">
+                <li><a href="#!"><i class="material-icons left">settings</i> Settings</a></li>
+                <li><a href="#!"><i class="material-icons left">attach_money</i> Profit</a></li>
+                <li><a href="#!"><i class="material-icons left">power_settings_new
+                </i> Logout</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main class="dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel new-form">
+            <table class="responsive-table highlight">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Genre</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>john.doe@mail.com</td>
+                  <td>Male</td>
+                  <td>
+                    <a href="#" class="btn red">Delete</a>
+                    <a href="#" class="btn blue">Edit</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>john.doe@mail.com</td>
+                  <td>Male</td>
+                  <td>
+                    <a href="#" class="btn red">Delete</a>
+                    <a href="#" class="btn blue">Edit</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer grey lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+            <p class="center">Created By: <a href="https://github.com/wirendzero">@wirendzero</a></p>
+            <p class="center">MIT License</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

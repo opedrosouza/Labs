@@ -1,0 +1,38 @@
+.has-sidenav{
+  padding-left: 300px;
+}
+.logo{
+  margin-left: -150px;
+}
+.custom-navbar .nav-wrapper{
+  width: calc(100% - 300px);
+}
+.custom-navbar ul li a{
+  color: #000;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 300px);
+  padding: 0;
+}
+.new-form{
+  margin-top: 50px;
+}
+
+@media only screen and (max-width : 992px) {
+  .has-sidenav {
+    padding-left: 0;
+  }
+  .logo{
+    margin-left: 0;
+  }
+  .custom-navbar .nav-wrapper{
+    width: calc(100%);
+  }
+  .footer{
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
